@@ -5,10 +5,10 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 ≡ *DONACION*
 puedes donar si quieres ayudar a mantener el bot activo
 
-▢ *PayPal*
-• *Link :* https://paypal.me/fg98f
-▢ *Mercado Pago Arg*
-• *Link :* https://mpago.la/1F3r6JH
+▢ *Banco azteca*1271 
+• *numero de cuenta: 1271 8001 2098 0198 81
+▢ destinario: Angel pantoja
+• *concepto donacion
 `
 let img = 'https://i.ibb.co/37FP2bk/donate.jpg'
 conn.sendButton(m.chat, don, 'Haga click en boton si quiere comprar o alquilar al bot', img, [['Buy Premium', `${usedPrefix}buyprem`]],m, rpyp)
