@@ -5,10 +5,10 @@ m.reply(`
 ≡  *TOXIC VIP ┃ SUPPORT*
 
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
-▢ Grupo *1*
+▢ Grupo1
 https://chat.whatsapp.com/GNgvKstDSQg3xeEGdXTQMu
 
-▢ Grupo *2*
+▢ Grupo2
 https://chat.whatsapp.com/ISUYtyZAzFLEvuNMtFiN7C
 
 
