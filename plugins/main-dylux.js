@@ -4,11 +4,11 @@ m.reply(`
 ≡  *TOXIC ┃ SUPPORT*
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ▢ Grupo *1*
-https://chat.whatsapp.com/IO9jmpI72ejHiN4unRZleU
+https://chat.whatsapp.com/GNgvKstDSQg3xeEGdXTQMu
 ▢ Grupo *2*
-https://chat.whatsapp.com/CDUqNRu5Kh5KY5uqQI0BKE
+https://chat.whatsapp.com/ISUYtyZAzFLEvuNMtFiN7C
 ▢ Grupo *3* 
-https://chat.whatsapp.com/F0JTTyZ3hsoL7OlU8TEpuH
+https://chat.whatsapp.com/DEc4k4irU5R1Nlh9r4ysuh
 ◈ ━━━━━━━━━━━━━━━━━━━━ ◈
 ▢ soporte
 • +523931678470
