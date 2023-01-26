@@ -14,9 +14,9 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.reply(m.chat, `*≡ Enlace de otro grupo Detectado*
+        await conn.reply(m.chat, `*≡ Enlace de otro grupo de gay o ratas Detectado*
             
-No permitimos enlaces de otros grupos 
+No permitimos enlaces de otros grupos maldito perro 
 lo siento *@${m.sender.split('@')[0]}*  adios puto vete a otro grupo a publicar tus link att AngelYT ${isBotAdmin ? '' : '\n\nNo soy admin así que no te puedo expulsar :"v'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })
