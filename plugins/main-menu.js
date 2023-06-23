@@ -35,9 +35,9 @@ const defaultMenu = {
 👥 Usuarios : %totalreg
 📈 Tiempo activo : %muptime
 ─────────────
-▢ Creador del bot:AngelYT
-• Numero del creador: +523931678470
-▢ Numero del bot oficial:+523931806576
+▢ Creador del bot:Angel Pantoja
+• Numero del creador: +523931806576
+▢ Numero del bot oficial:+16502165691
 ─────────────
 %readmore
 Ⓟ = Premium
