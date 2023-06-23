@@ -37,7 +37,7 @@ const defaultMenu = {
 ─────────────
 ▢ Creador del bot:Angel Pantoja
 • Numero del creador: +523931806576
-▢ Numero del bot oficial:+16502165691
+▢ Numero del bot oficial:+12177294084
 ─────────────
 %readmore
 Ⓟ = Premium
